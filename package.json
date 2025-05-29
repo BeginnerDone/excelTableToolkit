@@ -1,0 +1,49 @@
+{
+  "name": "excel-table-toolkit",
+  "version": "1.0.0",
+  "description": "A toolkit for copying data between Excel and table components with extensible UI library support",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --filter core build",
+    "core:dev": "pnpm --filter core dev",
+    "dev": "pnpm --filter example dev",
+    "example:preview": "pnpm --filter example preview",
+    "lint": "pnpm -r lint",
+    "type-check": "pnpm -r type-check",
+    "clean": "pnpm -r clean"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3",
+    "rollup": "^4.9.0",
+    "rollup-plugin-esbuild": "^6.1.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "esbuild": "^0.19.11",
+    "vite": "^5.0.10",
+    "vue": "^3.4.3",
+    "@vitejs/plugin-vue": "^4.6.2",
+    "eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "prettier": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "keywords": [
+    "excel",
+    "table",
+    "copy-paste",
+    "vue",
+    "typescript",
+    "ui-library"
+  ],
+  "author": "",
+  "license": "MIT"
+}
